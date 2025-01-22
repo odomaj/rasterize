@@ -9,7 +9,7 @@ from platform import system
 from time import sleep
 
 
-PYTHON_VERSION = "3.12.5"
+PYTHON_VERSION = "3.13.1"
 
 
 def make_venv() -> None:
