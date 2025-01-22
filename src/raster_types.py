@@ -1,4 +1,4 @@
-from typing import Annotated, Literal
+from typing import Annotated, Literal, Tuple
 import numpy as np
 
 Raster_NxM_F = Annotated[
@@ -21,4 +21,6 @@ Raster_RGB_NxM_I = Annotated[
     Literal["N", "M", 3],
 ]
 
-Triangle = Annotated[np.typing.NDArray[np.float32], Literal[3]]
+RasterPoint_F = Annotated[np.typing.NDArray[np.float32], Literal[2]]
+
+Triangle_F = Annotated[np.typing.NDArray[np.float32], Literal[3, 2]]
